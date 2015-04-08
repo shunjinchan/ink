@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*                                                         
+ * pagination 分页 
+ * author: shunjinchan@gmail.com   
+ */
+
+.pagination {
+    margin: 1em 0;
+    text-align: center;
+    a, span {
+        @include inline-block();
+        color: $paginationColor;
+        background: $paginationBg;
+        height: $paginationHeight;
+        line-height: $paginationHeight;
+        padding: 0 10px;
+        margin: 0 1px;
+        *margin: 0 3px;
+    }
+    a {
+        @include transition(all ease-in-out 0.05s);
+        &:hover {
+            background: $paginationHoverBg;
+            text-decoration: none;
+            color: $paginationHoverColor;
+            @include transition(all ease-in-out 0.05s);
+        }
+    }
+    // 当前页面
+    span,
+    .active {
+        background: $paginationActiveBg;
+        color: $paginationActiveColor;
+    }
+    .disabled {
+        background-color: $paginationDisabledBg !important;
+        color: $paginationDisabledColor !important;
+        cursor: not-allowed !important;
+    }
+}
+
+// 边框
+@if $paginationBorderSwitch {
+    .pagination-border {
+        a, span {
+            background-color: #fff;
+            color: #444;
+            @include box-sizing();
+        }
+        // 当前页面
+        span,
+        .active {
+            background: $paginationActiveBg;
+            color: $paginationActiveColor;
+        }
+        a {
+            border: 1px solid $paginationBorder;
+            &:hover {
+                border: 1px solid $paginationHoverBg;
+            }
+        }
+        span {
+            border: 1px solid $paginationActiveBg;
+        }
+    }
+}

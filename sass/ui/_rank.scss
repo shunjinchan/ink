@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*                                                         
+ * rank 排行榜
+ * author: shunjinchan@gmail.com   
+ */
+
+.rank {}
+
+.rank-item {
+    text-align: right;
+    height: $rankHeight;
+    line-height: $rankHeight;
+    overflow: hidden;
+    i {
+        float: left;
+        font-style: normal;
+        text-align: center;
+        background-color: #dedede;
+        overflow: hidden;
+        margin-right: 6px;
+        width: 16px;
+        height: 18px;
+        line-height: 18px;
+        margin-top: ($rankHeight - 18) / 2;
+    }
+    .count {
+        color: $textGrayColor;
+    }
+    .title-link {
+        float: left;
+        text-align: left;
+        width: $rankTitleWidth;
+    }
+}
+
+.rank-1st i,
+.rank-2nd i,
+.rank-3rd i {
+    color: #fff;
+}
+
+.rank-1st i {
+    background-color: #FA4D11;
+}
+
+.rank-2nd i {
+    background-color: #FA8411;
+}
+
+.rank-3rd i {
+    background-color: #FAC011;
+}

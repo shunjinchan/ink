@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/*                                                         
+ * utility 工具类
+ * author: bootstrap 
+ */
+
+.hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #000000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+.close:hover,
+.close:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    vertical-align: baseline;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.affix {
+    position: fixed;
+    top: 0;
+}
+
+.fade {
+    opacity: 0;
+    @include transition(opacity .15s linear);
+}
+
+.in,
+.fade.in {
+    opacity: 1;
+}
+
+.collapse {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    @include transition(height .35s ease);
+}
+
+.collapse.in,
+.in {
+    height: auto;
+}
+
+/* add by shunjinchan */
+
+.clearfix {
+    @include clearfix();
+}
+
+.disabled {
+    @include disabled();
+}
+
+.caret {
+    @include triangle(bottom, 4px, #555);
+    @include inline-block();
+    vertical-align: middle;
+}

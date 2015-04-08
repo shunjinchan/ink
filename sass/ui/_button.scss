@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/*                                                         
+ * button 按钮
+ * author: shunjinchan@gmail.com  
+ * tips: 建议使用 a 标签                                          
+ */
+
+.button {
+    cursor: pointer;
+    text-align: center;
+    border: 0 none;
+    border-radius: $btnBorderRadius;
+    height: $btnDefault;
+    line-height: $btnDefault;
+    padding: 0 12px;
+    @include inline-block();
+    @include transition(background-color .2s ease-out, border-color .2s ease-out);
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        @include transition(background-color .2s ease-in, border-color .2s ease-in);
+    }
+}
+
+.button-default {
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    &:hover, &:focus, &:active {
+        background-color: #f3f3f3;
+        color: #333;
+    }
+}
+
+.button-small {
+    padding: 0 6px;
+    font-size: 12px;
+    height: $btnSmall;
+    line-height: $btnSmall;
+}
+
+.button-large {
+    padding: 0 40px;
+    font-size: 18px;
+    height: $btnLarge;
+    line-height: $btnLarge;
+    border-radius: $btnBorderRadius;
+}
+
+.button-primary {
+    color: #fff;
+    background-color: $btnPrimaryBg;
+    border: 1px solid $btnPrimaryBg;
+    &:hover, &:focus, &:active {
+        background-color: $btnPrimaryHoverBg;
+        border-color: $btnPrimaryHoverBg;
+        color: #fff;
+    }
+}
+
+.button-yellow, .button-orange, .button-green, .button-red {
+    color: #fff;
+    &:hover, &:focus, &:active {
+        color: #fff;
+    }
+}
+
+.button-orange {
+    background-color: $btnOrangeBg;
+    border: 1px solid $btnOrangeBg;
+    &:hover, &:focus, &:active {
+        background-color: $btnOrangeHoverBg;
+        border-color: $btnOrangeHoverBg;
+    }
+}
+
+.button-yellow {
+    background-color: $btnYellowBg;
+    border: 1px solid $btnYellowBg;
+    &:hover, &:focus, &:active {
+        background-color: $btnYellowHoverBg;
+        border-color: $btnYellowHoverBg;
+
+    }
+}
+
+.button-green {
+    background-color: $btnGreenBg;
+    border: 1px solid $btnGreenBg;
+    &:hover, &:focus, &:active {
+        background-color: $btnGreenHoverBg;
+        border-color: $btnGreenHoverBg;
+
+    }
+}
+
+.button-red {
+    background-color: $btnRedBg;
+    border: 1px solid $btnRedBg;
+    &:hover, &:focus, &:active {
+        background-color: $btnRedHoverBg;
+        border-color: $btnRedHoverBg;
+
+    }
+}
+
+
+.button-disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    opacity: .65;
+}
+
+
+

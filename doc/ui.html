@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- IE 兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 360浏览器使用 webkit 内核渲染 -->
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="关键字,关键字,关键字" />
+    <meta name="description" content="描述。……" />
+    <meta name="Author" content="chenshunjin">
+    <title>UI 组件</title>
+    <link rel="stylesheet" type="text/css" href="../dist/css/ink.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="hedaer" class="header">
+        <div class="container">
+            <!-- nav begin -->
+            <div class="nav">
+                <ul class="clearfix">
+                    <li>
+                        <a href="basic.html" title=" Basic">Basic</a>
+                    </li>
+                    <li class="active">
+                        <a href="ui.html" title="UI 组件">UI 组件</a>
+                    </li>
+                    <li>
+                        <a href="ui-js.html" title="JS 组件">JS 组件</a>
+                    </li>
+                    <li>
+                        <a href="font.html" title="JS 组件">字体图标</a>
+                    </li>
+                    <li>
+                        <a href="ui-other.html" title="其他">其他</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- nav end -->
+        </div>
+    </div>
+    <!-- wrap begin -->
+    <div class="container">
+        <div class="wrap">
+            <!-- main begin -->
+            <div class="main">
+                <h2 id="UI" class="typo-h2">UI 组件</h2>
+                <!-- filter begin -->
+                <div class="example filter-example">
+                    <h3 class="typo-h3">标签过滤</h3>
+                    <div class="filter">
+                        <div class="filter-item">
+                            <strong class="filter-label">苹果：</strong>
+                            <div class="filter-content">
+                                <span class="active">不限</span>
+                                <span>iPhone 6</span>
+                                <span>iPhone 5s</span>
+                                <span>iPhone 6s</span>
+                                <span>iPhone 5</span>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <strong class="filter-label">魅族：</strong>
+                            <div class="filter-content">
+                                <span>不限</span>
+                                <span class="active">MX4</span>
+                                <span>魅蓝</span>
+                                <span>MX3</span>
+                                <span>M8</span>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <strong class="filter-label">nexus：</strong>
+                            <div class="filter-content">
+                                <span>不限</span>
+                                <span class="active">nexus 6</span>
+                                <span>nexus 5</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                                <span>nexus 4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- filter end -->
+                <!-- 面包屑 begin -->
+                <div class="example crumb-example">
+                    <h3 class="typo-h3">面包屑</h3>
+                    <div class="crumb">
+                        <a href="/">首页</a> &gt;
+                        <a href="">列表页</a> &gt;
+                        <span class="active">详细页</span>
+                    </div>
+                </div>
+                <!-- 面包屑 end -->
+                <!-- pagination begin -->
+                <div class="example pagination-example">
+                    <h3 class="typo-h3">分页</h3>
+                    <div class="pagination">
+                        <span>1</span>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_1.html">2</a>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_2.html">3</a>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_3.html">4</a>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_4.html">55</a>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_1.html" class="next">下一页</a>
+                        <a target="_self" class="viewAll" href="http://diy.pconline.com.cn/624/6243398_all.html#content_page_2" rel="nofollow">在本页浏览全文</a>
+                    </div>
+                    <div class="pagination pagination-border">
+                        <span>1</span>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_1.html">2</a>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_2.html">3</a>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_3.html">4</a>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_4.html">5</a>
+                        <a target="_self" href="http://diy.pconline.com.cn/624/6243398_1.html" class="next">下一页</a>
+                        <a target="_self" class="viewAll" href="http://diy.pconline.com.cn/624/6243398_all.html#content_page_2" rel="nofollow">在本页浏览全文</a>
+                    </div>
+                </div>
+                <!-- pagination end -->
+                <!-- 警告框 begin -->
+                <div class="example alert-example">
+                    <h3 class="typo-h3">Alert</h3>
+                    <div class="alert alert-warning" role="alert">
+                        床前明月光，疑是地上霜，举头望明月，低头思故乡
+                    </div>
+                </div>
+                <!-- 警告框 end -->
+                <!-- 进度条 begin -->
+                <div class="example progress-example">
+                    <h3 class="typo-h3">progress</h3>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <!-- 进度条 end -->
+                <!-- Box begin -->
+                <div class="example box-example grid-7">
+                    <h3 class="typo-h3">Box</h3>
+                    <div class="box">
+                        <div class="box-title">
+                            <h2>产业新闻</h2>
+                            <a href="#" target="_blank" class="more">更多</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box end -->
+
+                <!-- list begin -->
+                <div class="example list-example grid-7">
+                    <h3 class="typo-h3">list</h3>
+                    <ul class="list">
+                        <li class="list-item">
+                            <i class="circle"></i>
+                            <span class="date">[08-18]</span>
+                            <a href="http://pcgames.com.cn" target="_blank">床前明月光，疑是地上霜，举头望明月，低头思故乡</a>
+                        </li>
+                        <li class="list-item">
+                            <i class="circle"></i>
+                            <span class="date">[08-18]</span>
+                            <a href="http://pcgames.com.cn" target="_blank">床前明月光，疑是地上霜，举头望明月，低头思故乡</a>
+                        </li>
+                        <li class="list-item">
+                            <i class="circle"></i>
+                            <span class="date">[08-18]</span>
+                            <a href="http://pcgames.com.cn" target="_blank">床前明月光，疑是地上霜，举头望明月，低头思故乡</a>
+                        </li>
+                        <li class="list-item">
+                            <i class="circle"></i>
+                            <span class="date">[08-18]</span>
+                            <a href="http://pcgames.com.cn" target="_blank">床前明月光，疑是地上霜，举头望明月，低头思故乡</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- list end -->
+                <!-- 排行榜 begin -->
+                <div class="example rank-example grid-7">
+                    <h3 class="typo-h3">排行榜</h3>
+                    <div class="rank-example">
+                        <ol class="rank">
+                            <li class="rank-item rank-1st">
+                                <i>1</i>
+                                <a title="床前明月光疑是地上霜举头望明月明月" class="title-link" href="">床前明月光疑是地上霜举头望明月明月</a>
+                                <span class="count">2356</span>
+                            </li>
+                            <li class="rank-item rank-2nd">
+                                <i>2</i>
+                                <a title="床前明月光，疑是地上霜，举头望明月" class="title-link" href="">床前明月光，疑是地上霜，举头望明月</a>
+                                <span class="count">2201</span>
+                            </li>
+                            <li class="rank-item rank-3rd">
+                                <i>3</i>
+                                <a title="床前明月光，疑是地上霜，举头望明月" class="title-link" href="">床前明月光，疑是地上霜，举头望明月</a>
+                                <span class="count">2108</span>
+                            </li>
+                            <li class="rank-item">
+                                <i>4</i>
+                                <a title="床前明月光，疑是地上霜，举头望明月" class="title-link" href="">床前明月光，疑是地上霜，举头望明月</a>
+                                <span class="count">1964</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- 排行榜 end -->
+                
+                <!-- card begin -->
+                <div class="example card-example">
+                    <h3 class="typo-h3">card</h3>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="http://placekitten.com/g/290/290" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-content-title">
+                                <a href="" title="">我是一只猫</a>
+                            </h3>
+                            <div class="card-content-meta">
+                                <span>2015-04-06</span>
+                            </div>
+                            <div class="card-content-description">
+                                猫（学名：Felis silvestris catus），俗称猫咪或猫子，通常指向家猫，为小型猫科动物，是为野猫（又称斑猫；Felis silvestris）中的亚种[1]。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- media begin -->
+                <div class="example media-example">
+                    <h3 class="typo-h3">media</h3>
+                    <div class="media">
+                        <a href="#" class="media-left">
+                            <img src="http://placekitten.com/g/180/135">
+                        </a>
+                        <div class="media-body">
+                            <div class="media-body-title">
+                                <h2>
+                                    <a href="http://pcauto.com.cn" target="_blank">
+                                    出售进口雷克萨斯GS430一键启动最高配置或置换
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="media-body-content typo-small">
+                                春暖花开的3月，我们迎来了对微软，特别是对微软中国最为激动人心的一年——无论是Windows还是Xbox，我们都将带来突破性的革新。在此，我想特别... <a href="#" target="_blank" class="more">更多</a>
+                            </div>
+                            <div class="media-body-meta typo-small">
+                                <span class="pull-right">2015-03-20</span>
+                                <span>关键词：</span>
+                                <a class="keyword" href="#" target="_blank">密室求生</a>
+                                <a class="keyword" href="#" target="_blank">Xbox</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- media end -->
+                
+                <!-- 图片列表 begin -->
+                <div class="example piclist-example">
+                    <h3 class="typo-h3">图片列表</h3>
+                    <div class="piclist">
+                        <ul>
+                            <li class="piclist-item">
+                                <a href="">
+                                    <img src="http://placekitten.com/g/180/135" alt="">
+                                    <p class="piclist-title">床前明月光，疑是地上霜，举头望明月</p>
+                                </a>
+                            </li>
+                            <li class="piclist-item">
+                                <a href="">
+                                    <img src="http://placekitten.com/g/180/135" alt="">
+                                    <p class="piclist-title">床前明月光，疑是地上霜，举头望明月</p>
+                                </a>
+                            </li>
+                            <li class="piclist-item">
+                                <a href="">
+                                    <img src="http://placekitten.com/g/180/135" alt="">
+                                    <p class="piclist-title">床前明月光，疑是地上霜，举头望明月</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="piclist-item">
+                                <a href="">
+                                    <img src="http://placekitten.com/g/180/135" alt="">
+                                    <p class="piclist-title piclist-title-alpha">床前明月光，疑是地上霜，举头望明月</p>
+                                </a>
+                            </li>
+                            <li class="piclist-item">
+                                <a href="">
+                                    <img src="http://placekitten.com/g/180/135" alt="">
+                                    <p class="piclist-title piclist-title-alpha">床前明月光，疑是地上霜，举头望明月</p>
+                                </a>
+                            </li>
+                            <li class="piclist-item">
+                                <a href="">
+                                    <img src="http://placekitten.com/g/180/135" alt="">
+                                    <p class="piclist-title piclist-title-alpha">床前明月光，疑是地上霜，举头望明月</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 图片列表 end -->
+            </div>
+            <!-- main end -->
+            <!-- aside begin -->
+            <div class="aside">
+                aside
+            </div>
+            <!-- aside end -->
+        </div>
+    </div>
+    <!-- wrap end -->
+    
+    <script src="../dist/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../dist/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

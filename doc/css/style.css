@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* ==========================================================================
+   脚手架
+   ========================================================================== */
+/* ==========================================================================
+   UI 组件
+   ========================================================================== */
+/* ==========================================================================
+   JS 组件
+   ========================================================================== */
+.dropdown-example .dropdown, .dropdown-example .dropup {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
+.wrap {
+  padding-top: 50px;
+  padding-bottom: 300px; }
+
+/* ==========================================================================
+   排版
+   ========================================================================== */
+.typo-h2 {
+  font-size: 30px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  color: #D35400; }
+
+.typo-h3 {
+  font-size: 24px;
+  padding-top: 20px; }
+
+/* ==========================================================================
+   按钮例子
+   ========================================================================== */
+.button-example .button {
+  margin-right: 15px; }
+.button-example .type {
+  margin-bottom: 0.6em; }
+
+.form-example .form-radio {
+  margin-left: 1px; }
+
+.popover-example li,
+.tooltips-example li {
+  float: left;
+  margin: 10px; }
+
+.carousel-example-item {
+  width: 520px;
+  height: 280px; }
+
+.tab-example-item {
+  margin-top: 15px; }
+
+.cover-example {
+  margin-bottom: 10px; }
+  .cover-example .cover-example-item {
+    width: 300px;
+    height: 150px; }
+
+.dropdown-example .dropdown, .dropdown-example .dropup {
+  margin-right: 20px; }
+
+.dropdown-example-item {
+  margin-bottom: 10px; }
+
+.helps {
+  margin-top: 40px; }
+
+.icon_lists li {
+  float: left;
+  width: 138px;
+  height: 164px;
+  text-align: center; }
+
+.icon_lists .icon {
+  font-size: 32px;
+  line-height: 64px;
+  margin: 10px 0;
+  color: #333;
+  -webkit-transition: font-size 0.25s ease-out 0s;
+  -moz-transition: font-size 0.25s ease-out 0s;
+  transition: font-size 0.25s ease-out 0s; }
+
+.icon_lists .icon:hover {
+  font-size: 64px; }
+
+/*# sourceMappingURL=style.css.map */

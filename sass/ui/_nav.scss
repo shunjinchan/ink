@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*                                                         
+ * nav 导航
+ * author: shunjinchan@gmail.com   
+ */
+
+.nav {
+    height: $navHeight;
+    line-height: $navHeight;
+    background-color: $navBgColor;
+    overflow: hidden;
+    li {
+        float: left;
+        a {
+            display: block;
+            color: $navTextColor;
+            padding: 0 20px;
+            @include transition(all, 0.3s, ease-in);
+            &:hover, &:focus {
+                text-decoration: none;
+                background-color: $navItemHoverBg;
+                color: $navTextHoverColor;
+                @include transition(all, 0.3s, ease-in);
+            }
+        }
+    }
+    .active {
+        a {
+            background-color: $navItemHoverBg;
+            color: $navTextHoverColor;
+        }
+    }
+}

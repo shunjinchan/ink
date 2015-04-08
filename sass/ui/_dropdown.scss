@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* 
+ * dropdown
+ * author: shunjinchan@gmail.com
+ */
+
+.dropup,
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    *margin-bottom: -3px;
+}
+
+.dropdown-toggle:active,
+.open .dropdown-toggle {
+    outline: 0;
+}
+
+.dropdown .caret {
+    margin-left: 2px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    _top: 32px; // 默认是一个按钮的高度，根据实际情况调整
+    left: 0;
+    z-index: $zindexDropdown;
+    width: 120px;
+    margin: 2px 0 0;
+    background-color: #fff;
+    @include box-shadow(0 1px 4px 0 rgba(39, 41, 43, .15));
+    border: 1px solid $borderColor;
+    .divider {
+        height: 1px;
+        font-size: 0;
+        line-height: 0;
+        margin: 6px 0;
+        overflow: hidden;
+        border-top: 1px solid #eee;
+    }
+    .dropdown-menu-header {
+        margin: 12px 10px 4px 10px;
+        line-height: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .dropdown-menu-item {
+        a {
+            display: block;
+            padding: 6px 15px;
+            clear: both;
+            font-weight: normal;
+            height: 18px;
+            line-height: 18px;
+            white-space: nowrap;
+        }
+    }
+    .dropdown-menu-item,
+    .active {
+        a {
+            &:hover, &:focus {
+                text-decoration: none;
+                background-color: #f3f3f3;
+            }
+        }
+    }
+    .active {
+        a {
+            text-decoration: none;
+            background-color: #f3f3f3;
+            // color: $linkHoverColor;
+        }
+    }
+    .disabled {
+        a {
+            color: #999;
+            &:hover, &:focus {
+                color: #999;
+                text-decoration: none;
+                background-color: transparent;
+                background-image: none;
+                cursor: default;
+            }
+        }
+    }
+}
+
+// 展开状态
+.open {
+    *z-index: 1000;
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+// 靠右的下拉菜单
+.pull-right .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+// 向上以及顶级菜单的三角形
+.dropup {
+    .caret {
+        border-top: 0;
+        border-bottom: 4px solid #555;
+    }
+    .dropdown-menu {
+        top: auto;
+        bottom: 100%;
+        _top: 32px; // 默认是一个按钮的高度，根据实际情况调整
+        margin-bottom: 1px;
+    }
+}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*                                                         
+ * 图文列表
+ * author: shunjinchan@gmail.com   
+ */
+
+.piclist {
+    @include clearfix;
+}
+
+.piclist-item {
+    float: left;
+    width: $piclistImgWidth;
+    display: inline;
+    position: relative;
+    margin-right: $piclistGutter;
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    img {
+        width: $piclistImgWidth;
+        height: $piclistImgHeight;
+        vertical-align: middle;
+    }
+}
+
+.piclist-title {
+    padding: 0 5px;
+    line-height: 20px;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.piclist-title-alpha {
+    height: $piclistAlphaTitleHeight;
+    line-height: $piclistAlphaTitleHeight;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include bgcolor-alpha();
+}
+

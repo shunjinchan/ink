@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/*                                                         
+ * form 表单
+ * author: shunjinchan@gmail.com   
+ * require: button                                                
+ */
+
+.form-item {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.form-text,
+.form-textarea {
+    border: 1px solid $inputBorderColor;
+    padding: 4px;
+    @include transition(border-color ease-in-out .3s);
+    &:focus {
+        border-color: $inputBorderFocusColor;
+        outline: 0 none;
+        @include transition(border-color ease-in-out .3s);
+    }
+}
+
+.form {
+    .error {
+        border-color: $inputBorderErrorColor;
+    }
+}
+
+.form-text {
+    width: $inputWidthDefault;
+    height: $inputHeight;
+    line-height: $inputHeight;
+    margin-right: 10px;
+}
+
+.form-text-small {
+    width: $inputWidthSmall;
+}
+
+.form-text-large {
+    width: $inputWidthLarge;
+}
+
+.form-textarea {
+    resize: none;
+    vertical-align: top;
+    overflow: auto;
+    width: 500px;
+    height: 80px;
+}
+
+.form-radio {
+    vertical-align: baseline !important;
+}
+
+.form-select {
+    border: 1px solid $inputBorderColor;
+}
+
+.form-label {
+    @include inline-block();
+    margin-right: 10px;
+    input {
+        margin-right: 5px;
+    }
+}
+
+input[disabled],
+textarea[disabled],
+button[disabled] {
+    cursor: not-allowed;
+    background-color: #eee;
+}
+

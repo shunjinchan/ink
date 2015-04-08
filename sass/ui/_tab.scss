@@ -1,0 +1,112 @@
+@charset "utf-8";
+/*                                                         
+ * tab 面板切换
+ * 默认有边框
+ * author: shunjinchan@gmail.com   
+ */
+
+.tab {}
+
+.tab-title {
+    position: relative;
+    z-index: 2;
+    border-left: 1px solid $tabBorderColor;
+    .active {
+        background: #fff;
+        border-bottom: 1px solid #fff;
+    }
+    a {
+        color: #333;
+        padding: 0 16px;
+        display: block;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.tab-title-item {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    background-color: $tabBgColor;
+    border: 1px solid $tabBorderColor;
+    border-left: none;
+}
+
+.tab-content {
+    border: 1px solid $tabBorderColor;
+    // padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    top: -1px;
+    .active {
+        display: block;
+    }
+}
+
+.tab-content-pane {
+    display: none;
+}
+
+.tab-vertical {
+    @include clearfix();
+    border: 1px solid $tabBorderColor;
+    .tab-title {
+        float: left;
+        width: 75px;
+        border: 0;
+        text-align: center;
+        a {
+            padding: 0;
+        }
+        .active {
+            border-bottom: none;
+            position: relative;
+            a {
+                position: absolute;
+                width: 73px;
+                border-left: 2px solid nth($primaryColor, 1);
+                left: -1px;
+            }
+        }
+    }
+    .tab-title-item {
+        float: none;
+        border: none;
+        margin-top: 2px;
+        *vertical-align: middle;
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+    // lte ie9 为第一个.tab-title-item 添加 .first 
+    .first {
+        margin-top: 0;
+    }
+    .tab-content {
+        *zoom: 1;
+        overflow: hidden;
+        border: none;
+    }
+}
+
+.tab-primary {
+    .tab-title {
+        border: none;
+        .active {
+            border-bottom: 2px solid nth($primaryColor, 1);
+            height: 30px;
+            a {
+                color: $linkColor;
+            }
+        }
+    }
+    .tab-title-item {
+        background-color: transparent;
+        border: none;
+        a {
+            color: $textGrayColor;
+        }
+    }
+}

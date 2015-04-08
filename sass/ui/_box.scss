@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*                                                         
+ * box
+ * author: shunjinchan@gmail.com   
+ */
+
+.box {
+    margin-bottom: $boxVGutter;
+}
+
+.box-title {
+    height: $boxTitleHeight;
+    text-align: right;
+    border-bottom: 1px solid $boxTitleBorderColor;
+    overflow: hidden;
+    h2, h3 {
+        font-size: 18px;
+        line-height: $boxTitleHeight;
+        float: left;
+        padding: 0 5px;
+        font-weight: normal;
+        // border-bottom: 1px solid #c00;
+    }
+    .more {
+        padding: 0 5px;
+        line-height: $boxTitleHeight;
+        color: $textGrayColor;
+        &:hover {
+            color: $linkHoverColor;
+        }
+    }
+}
+.box-body {
+    // padding: 10px;
+}

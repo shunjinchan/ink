@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- IE 兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 360浏览器使用 webkit 内核渲染 -->
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="关键字,关键字,关键字" />
+    <meta name="description" content="描述。……" />
+    <meta name="Author" content="chenshunjin">
+    <title>Basic</title>
+    <link rel="stylesheet" type="text/css" href="../dist/css/ink.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="hedaer" class="header">
+        <div class="container">
+            <!-- nav begin -->
+            <div class="nav">
+                <ul class="clearfix">
+                    <li class="active">
+                        <a href="basic.html" title=" Basic">Basic</a>
+                    </li>
+                    <li>
+                        <a href="ui.html" title="UI 组件">UI 组件</a>
+                    </li>
+                    <li>
+                        <a href="ui-js.html" title="JS 组件">JS 组件</a>
+                    </li>
+                    <li>
+                        <a href="font.html" title="JS 组件">字体图标</a>
+                    </li>
+                    <li>
+                        <a href="ui-other.html" title="其他">其他</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- nav end -->
+        </div>
+    </div>
+    <!-- wrap begin -->
+    <div class="container">
+        <div class="wrap">
+            <!-- main begin -->
+            <div class="main">
+                <h2 id="basic" class="typo-h2">Basic</h2>
+                <!-- 表格 begin -->
+                <div class="example table-example typo">
+                    <h3 class="typo-h3">table</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 表格 end -->
+
+                <!--  按钮 begin -->
+                <div class="example button-example">
+                    <h3 class="typo-h3">按钮</h3>
+                    <ul class="typo">
+                        <li>
+                            <p class="type">
+                                不同颜色
+                            </p>
+                            <p>
+                                <a href="#" class="button button-large button-default">默认按钮</a>
+                                <a href="#" class="button button-large button-primary">primary button</a>
+                                <a href="#" class="button button-large button-yellow">yellow button</a>
+                            </p>
+                            <p>
+                                <a href="#" class="button button-large button-orange">orange button</a>
+                                <a href="#" class="button button-large button-green">green button</a>
+                                <a href="#" class="button button-large button-red">red button</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="type">
+                                不同大小
+                            </p>
+                            <p>
+                                <a href="#" class="button button-primary button-large">large button</a>
+                                <a href="#" class="button button-primary">nomal button</a>
+                                <a href="#" class="button button-primary button-small">small button</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="type">
+                                不同状态
+                            </p>
+                            <p>
+                                <a href="#" class="button button-primary button-disabled">disabled button</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--  按钮 end -->
+
+                <!-- 表单 begin -->
+                <div class="example form-example">
+                    <h3 class="typo-h3">表单</h3>
+                    <form class="form">
+                        <div class="form-item">
+                            <input type="text" placeholder="small input" class="form-text form-text-small" id="password">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" placeholder="default input" class="form-text" id="username">
+                        </div>
+                        <div class="form-item">
+                            <input type="text" placeholder="large input" class="form-text form-text-large" id="password">
+                        </div>
+                        <div class="form-item search clearfix">
+                            <input type="text" placeholder="请输入搜索关键字" class="form-text form-text-large" id="username">
+                            <a href="###" class="button button-primary">搜索</a>
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label">
+                                <input class="form-checkbox" type="checkbox">男
+                            </label>
+                            <label class="form-label">
+                                <input class="form-checkbox" type="checkbox" checked="">女
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label">
+                                <input class="form-radio" type="radio">Yes
+                            </label>
+                            <label class="form-label">
+                                <input class="form-radio" type="radio" checked="">No
+                            </label>
+                        </div>
+                        <div class="form-item">
+                            <select class="form-select" size="1">
+                                <option selected="selected" value="1">身份证</option>
+                                <option value="2">学生证</option>
+                                <option value="3">军官证</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <input type="text" placeholder="On Error..." class="form-text error">
+                        </div>
+                        <div class="form-item">
+                            <textarea rows="3" cols="50" placeholder="textarea..." class="form-textarea"></textarea>
+                        </div>
+                        <div class="form-item">
+                            <input type="submit" class="button button-primary">
+                        </div>
+                    </form>
+                </div>
+                <!-- 表单 end -->
+                
+            </div>
+            <!-- main end -->
+            <!-- aside begin -->
+            <div class="aside">
+                aside
+            </div>
+            <!-- aside end -->
+        </div>
+    </div>
+    <!-- wrap end -->
+    
+    <script src="../dist/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../dist/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

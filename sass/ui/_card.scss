@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*                                                         
+ * card
+ * author: shunjinchan@gmail.com   
+ */
+
+.card {
+    width: $cardWidth;
+    border: 1px solid $cardBorderColor;
+    @include box-sizing();
+    @if $lte7 {
+        *width: $cardWidth - 2;
+    }
+}
+
+.card-image {
+    width: 100%;
+    overflow: hidden;
+    img {
+        vertical-align: middle;
+    }
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content-title {
+    line-height: 22px;
+}
+
+.card-content-meta {
+    line-height: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #999;
+}
+
+.card-content-description {
+    margin-top: .5em;
+    font-size: 12px;
+    line-height: 18px;
+    color: #777;
+}

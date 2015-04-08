@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*                                                         
+ * media 
+ * author: shunjinchan@gmail.com   
+ */
+
+.media {
+    border-bottom: 1px solid $mediaBorderColor;
+    padding: $mediaPadding 0;
+    line-height: 1.7;
+    @include clearfix();
+    @include transition(background-color ease-in-out .2s);
+    &:hover {
+        background-color: $mediaHoverBg;
+        @include transition(background-color ease-in-out .2s);
+    }
+}
+
+.media-hover {
+    background-color: $mediaHoverBg;
+}
+
+.media-left {
+    width: $mediaLeftWidth;
+    height: $mediaLeftHeight;
+    overflow: hidden;
+    margin-right: $mediaLeftGutter;
+    float: left;
+    background: $mediaHoverBg;
+    img {
+        width: $mediaLeftWidth;
+        height: $mediaLeftHeight;
+        vertical-align: middle;
+    }
+}
+
+.media-body {
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.media-body-title {
+    margin-bottom: 3px;
+    a {
+        color: $mediaTitleColor;
+        &:hover {
+            color: $mediaTitleHoverColor;
+        }
+        // &:visited {
+        //     color: #B28559; // 已点击链接颜色加不加呢，哎
+        // }
+    }
+    h2, h3, strong {
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+.media-body-content {
+    font-size: 12px;
+    color: $textGrayColor;
+    // text-indent: 2em;
+    margin-bottom: 7px;
+}
+
+.media-body-meta {
+    .keyword {
+        margin-right: 5px;
+    }
+}

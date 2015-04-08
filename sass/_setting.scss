@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+
+/* ==========================================================================
+   脚手架
+   ========================================================================== */
+// base
+//----------------------------------------------------- 
+$lte7:                  true !default; // 是否支持 IE7 IE6
+$filter:                true !default; // 是否输出滤镜
+
+
+// colors
+//----------------------------------------------------- 
+$black:                 #000 !default; // 高级黑
+$grayDarker:            #333 !default;
+$grayDark:              #999 !default;
+$gray:                  #ccc !default;
+$grayLight:             #f5f5f5 !default;
+$white:                 #fff !default;
+
+$red:                   #E74C3C #C0392B !default; // 红
+$blue:                  #3498DB #2980B9 !default; // 蓝
+$orange:                #E67E22 #D35400 !default; // 橙
+$green:                 #5cb85c #449d44 !default; // 绿帽绿
+$yellow:                #F1C40F #F39C12 !default; // 屎黄
+$purple:                #9B59B6 #8E44AD !default; // 基佬紫
+$darkBlue:              #34495E #2C3E50 !default; // 好像是深蓝
+$olive:                 #1ABC9C #16A085 !default; // 橄榄色？
+
+
+// Scaffolding
+//----------------------------------------------------- 
+$primaryColor:          #3498DB #2980B9 !default; // 主色
+$bodyBg:                #fff !default; // 背景色
+$textColor:             #444 !default; // 文字颜色
+$textGrayColor:         #999 !default; // 灰色字体颜色
+$linkColor:             #444 !default; // 链接颜色
+$linkHoverColor:        nth($primaryColor, 1) !default; // 链接鼠标悬浮颜色
+$borderColor:           #ccc !default; // 边框颜色
+
+
+// fonts
+//----------------------------------------------------- 
+$baseFont:              14px/1.8 Microsoft Yahei,tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+$fontCn:                "SimSun"; //宋体
+$fontYaHei:             "Microsoft Yahei"; //微软雅黑
+$fontHeiTi:             "SimHei"; //黑体
+
+
+// z-index
+//----------------------------------------------------- 
+$zindexNavbar:          1000 !default; // 顶部导航
+$zindexDropdown:        1000 !default; // 下拉菜单
+$zindexNavbarFixed:     1030 !default; // 顶部固定导航
+$zindexBackground:      1040 !default; // 模态框底部蒙版
+$zindexModal:           1050 !default; // 模态框
+$zindexPopover:         1060 !default; // 弹出提示
+$zindexTooltip:         1070 !default; // 工具提示
+
+
+// Buttons 按钮
+//----------------------------------------------------- 
+$btnFontWeight:                500 !default;
+$btnBorderRadius:              2px !default;
+
+$btnDefault:                   30px !default;
+$btnSmall:                     20px !default;
+$btnLarge:                     44px !default;
+
+$btnPrimaryBg:                 nth($primaryColor, 1) !default;
+$btnPrimaryHoverBg:            nth($primaryColor, 2) !default;
+
+$btnOrangeBg:                  nth($orange, 1) !default;
+$btnOrangeHoverBg:             nth($orange, 2) !default;
+
+$btnYellowBg:                  nth($yellow, 1) !default;
+$btnYellowHoverBg:             nth($yellow, 2) !default;
+
+$btnGreenBg:                   nth($green, 1) !default;
+$btnGreenHoverBg:              nth($green, 2) !default;
+
+$btnRedBg:                     nth($red, 1) !default;
+$btnRedHoverBg:                nth($red, 2) !default;
+
+
+
+// form 表单
+//----------------------------------------------------- 
+$inputHeight:                  22px !default; // 实际是 32px 
+$inputWidthDefault:            200px !default; // 实际是 210px
+$inputWidthLarge:              280px !default; // 实际是 290px
+$inputWidthSmall:              130px !default; // 实际是 140px
+$inputBorderColor:             $gray !default;
+$inputBorderFocusColor:        nth($primaryColor, 1) !default;
+$inputBorderErrorColor:        nth($red, 1) !default;
+
+
+/* ==========================================================================
+   UI 组件
+   ========================================================================== */
+// Pagination 分页
+//----------------------------------------------------- 
+$paginationColor:                    #555 !default;
+$paginationBg:                       #eee !default;
+$paginationBorder:                   #eee !default;
+$paginationHeight:                   28px !default;
+
+$paginationHoverColor:               #fff !default;
+$paginationHoverBg:                  nth($primaryColor, 1) !default;
+$paginationHoverBorder:              nth($primaryColor, 1) !default;
+
+$paginationActiveColor:              #fff !default;
+$paginationActiveBg:                 nth($primaryColor, 1) !default;
+$paginationActiveBorder:             nth($primaryColor, 1) !default;
+
+$paginationBorderSwitch:             true !default;
+$paginationDisabledColor:            #ababab !default;
+$paginationDisabledBg:               #e6e6e6 !default;
+$paginationDisabledBorder:           #e6e6e6 !default;
+
+
+
+// filter 过滤
+//----------------------------------------------------- 
+$filterHighLightColor:               nth($primaryColor, 1) !default;
+
+
+
+// alert 警告框
+//----------------------------------------------------- 
+$alertBorderRadius:         0 !default;
+
+$alertBg:                   #fcf8e3 !default;
+$alertText:                 #c09853 !default;
+$alertBorderColor:          #faebcc !default;
+
+
+
+// progress 进度条
+//----------------------------------------------------- 
+$progressBg:               #e8edf2 !default;
+$progressBarBg:            nth($primaryColor, 1) !default;
+$progressHeight:           12px !default;
+$progressRadius:           32px !default;
+
+
+// list 列表
+//----------------------------------------------------- 
+// 默认是 30px
+$listHeight:              30px !default;
+$listColor:               $textGrayColor !default; // 非链接颜色
+
+
+// media 媒体信息
+//----------------------------------------------------- 
+$mediaPadding:                 20px !default;
+$mediaHoverBg:                 #f7f7f7 !default;
+$mediaBorderColor:             $borderColor !default;
+$mediaLeftWidth:               180px !default;
+$mediaLeftHeight:              135px !default;
+$mediaLeftGutter:              15px !default;
+$mediaTitleColor:              nth($orange, 1) !default;
+$mediaTitleHoverColor:         nth($orange, 2) !default;
+
+
+// card 卡片
+//-----------------------------------------------------
+$cardWidth:                    290px !default;
+$cardBorderColor:              $borderColor !default;
+
+
+// nav
+//----------------------------------------------------- 
+$navHeight:                    40px !default;
+$navBgColor:                   #fff !default;
+$navTextColor:                 $linkColor !default;
+$navTextHoverColor:            $linkHoverColor !default;
+$navItemPadding:               20px !default;
+$navItemHoverBg:               #f7f7f7 !default;
+
+
+// box
+//----------------------------------------------------- 
+$boxTitleHeight:               40px !default;
+$boxTitleBorderColor:          $borderColor !default;
+$boxVGutter:                   10px !default; // box 垂直方向间距，margin-bottom
+
+
+// piclist
+//----------------------------------------------------- 
+$piclistImgWidth:              185px !default;
+$piclistImgHeight:             135px !default;
+$piclistGutter:                15px !default;
+$piclistAlphaTitleHeight:      30px !default;
+
+
+// ranklist
+//----------------------------------------------------- 
+$rankHeight:                  30px !default;
+$rankTitleWidth:              255px !default;
+
+
+
+// layout pc专用
+//----------------------------------------------------- 
+$layoutWidth:                  1120px !default;
+$layoutGutter:                 30px !default;
+$layoutTitleHeight:            40px !default;
+
+
+
+/* ==========================================================================
+   JS 组件
+   ========================================================================== */
+// modal
+//----------------------------------------------------- 
+$modalWidth:                   560px !default;
+$modalBorderRadius:            4px !default;
+$modalBodyMaxHeight:           360px !default;
+
+
+// Tabs
+//----------------------------------------------------- 
+$tabBgColor:                   $grayLight !default;
+$tabBorderColor:               $borderColor !default;
+$tabTitleBgColor:              $grayLight !default;
+
+
+// popover
+//----------------------------------------------------- 
+$popoverBorderRadius:          0 !default;
+$popoverBorderColor:           $borderColor !default;
+$popoverWidth:                 300px !default;
+
+
+// carousel
+//----------------------------------------------------- 
+$carouselBootstrapTheme:       false !default;
+$carouselWidth:                520px !default;
+$carouselHeight:               280px !default;
+$carouselAnimateSwitch:        true !default;
+$carouselBulletColor:          nth($primaryColor, 1) !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

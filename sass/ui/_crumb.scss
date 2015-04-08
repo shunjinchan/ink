@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*                                                         
+ * button 按钮
+ * author: shunjinchan@gmail.com   
+ */
+
+.crumb {
+    font-family: "SimSun";
+    color: #ccc;
+    font-weight: bold;
+    a, span {
+        padding: 0 6px;
+        font-family: $fontYaHei;
+        font-weight: normal;
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .active {
+        color: $textGrayColor;
+    }
+}
+

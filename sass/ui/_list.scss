@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*                                                         
+ * list 列表
+ * author: shunjinchan@gmail.com   
+ */
+
+/* 列表 */
+.list {
+    
+}
+
+.list-item {
+    height: $listHeight;
+    line-height: $listHeight;
+    overflow: hidden;
+    position: relative;
+    color: $listColor;
+    a {
+        color: $linkColor;
+        &:hover {
+            color: $linkHoverColor;
+        }
+    }
+    .date, .type {
+        color: $listColor;
+    }
+    .date {
+        float: right; // float为right的元素必须是其父元素的第一个子元素，否则在ie<8的浏览器会出问题
+    }
+    .circle {
+        float: left;
+        width: 3px;
+        height: 3px;
+        background-color: #dcdcdc;
+        _font-size: 0;
+        _line-height: 0;
+        margin-top: ($listHeight - 4)/2;
+        margin-right: 7px;
+    }
+}

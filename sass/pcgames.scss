@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+// 配置文件
+// -------------------------------------------
+@import "_base.scss";
+
+
+// 基本脚手架
+// -------------------------------------------
+@import "base/_reset.scss";
+@import "base/_utilities.scss";
+@import "ext/_layout.scss";
+// @import "base/_grid.scss"; // 栅栏系统，非必需
+// @import "base/_iconfont.scss";
+
+
+// ui 通用模块
+// -------------------------------------------
+@import "ui/_button.scss";
+@import "ext/_centerbox.scss";
+@import "ui/_form.scss";
+@import "ui/_paging";
+@import "ui/_crumb.scss";
+@import "ext/_nav.scss";
+@import "ui/_list.scss";
+@import "ui/_alert.scss";
+// @import "ext/_filter.scss";
+@import "ext/_box.scss";
+@import "ext/_piclist.scss";
+@import "ui/_media.scss";
+// @import "ext/_rank.scss";
+@import "ext/_cover.scss";
+
+// ui js 组件
+// -------------------------------------------
+@import "ui/_tab.scss";
+// @import "ui/_tooltip.scss";
+// @import "ui/_popover.scss";
+// @import "ui/_dropdown.scss";
+// @import "ui/_modal.scss";
+@import "ui/_carousel.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
