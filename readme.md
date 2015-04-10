@@ -9,7 +9,6 @@ ink 使用到的开源代码：
 - [media-queries](https://github.com/paranoida/sass-mediaqueries/blob/master/_media-queries.scss)，CSS3 媒体查询 Sass mixin 库
 - [bootstrap](https://github.com/twbs/bootstrap) JS 组件
 
-在此对这些开源代码的作者致以最真诚的谢意。
 
 ink 包括 Typography、Grid、常用的 UI 组件、JS 组件（bootstrap）
 
