@@ -1,19 +1,18 @@
 @charset "utf-8";
 
-@import "../../../sass/_base.scss";
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.3));
-}
+@import "../../sass/_base.scss";
 
 .wrap {
     padding-top: 50px;
     padding-bottom: 300px;
+}
+
+.font {
+    .wrap {
+        width: 980px;
+        margin: 0 auto;
+        padding-right: 0;
+    }
 }
 
 /* ==========================================================================
@@ -88,12 +87,6 @@
 /* ==========================================================================
    字体
    ========================================================================== */
-
-.font {
-    .container {
-        padding-top: 50px;
-    }
-}
 .helps {
     margin-top: 40px;
 }

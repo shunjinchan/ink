@@ -87,10 +87,10 @@ $btnRedHoverBg:                nth($red, 2) !default;
 
 // form 表单
 //----------------------------------------------------- 
-$inputHeight:                  22px !default; // 实际是 32px 
-$inputWidthDefault:            200px !default; // 实际是 210px
-$inputWidthLarge:              280px !default; // 实际是 290px
-$inputWidthSmall:              130px !default; // 实际是 140px
+$inputHeight:                  22px !default;
+$inputWidthDefault:            200px !default;
+$inputWidthLarge:              280px !default;
+$inputWidthSmall:              130px !default;
 $inputBorderColor:             $gray !default;
 $inputBorderFocusColor:        nth($primaryColor, 1) !default;
 $inputBorderErrorColor:        nth($red, 1) !default;

@@ -31,3 +31,25 @@
         }
     }
 }
+
+.nav-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: $zindexNavbar;
+    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    @if $lte7 {
+        _position: absolute;
+        _width: expression(eval(document.documentElement.clientWidth));
+        _top: expression(eval(document.documentElement.scrollTop));
+    }
+}
+
+@if $lte7 {
+    /* 修正IE6振动bug */
+    * html,* html body {
+        background-image:url(about:blank);
+        background-attachment:fixed;
+    }
+}

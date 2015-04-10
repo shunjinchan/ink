@@ -13,18 +13,14 @@
   *display: inline;
   *zoom: 1; }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
-
 .wrap {
   padding-top: 50px;
   padding-bottom: 300px; }
+
+.font .wrap {
+  width: 980px;
+  margin: 0 auto;
+  padding-right: 0; }
 
 /* ==========================================================================
    排版
@@ -39,9 +35,6 @@
   font-size: 24px;
   padding-top: 20px; }
 
-/* ==========================================================================
-   按钮例子
-   ========================================================================== */
 .button-example .button {
   margin-right: 15px; }
 .button-example .type {
@@ -74,6 +67,9 @@
 .dropdown-example-item {
   margin-bottom: 10px; }
 
+/* ==========================================================================
+   字体
+   ========================================================================== */
 .helps {
   margin-top: 40px; }
 

@@ -26,13 +26,12 @@
     display: none;
     position: absolute;
     top: 100%;
-    _top: 32px; // 默认是一个按钮的高度，根据实际情况调整
     left: 0;
     z-index: $zindexDropdown;
     width: 120px;
     margin: 2px 0 0;
     background-color: #fff;
-    @include box-shadow(0 1px 4px 0 rgba(39, 41, 43, .15));
+    @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, .15));
     border: 1px solid $borderColor;
     .divider {
         height: 1px;
@@ -114,5 +113,12 @@
         bottom: 100%;
         _top: 32px; // 默认是一个按钮的高度，根据实际情况调整
         margin-bottom: 1px;
+    }
+}
+
+// button 配合 dropdown、dropup 一起使用，caret 在 IE6 中无法垂直居中，隐藏
+.button.dropdown, .button.dropup {
+    .caret {
+        _display: none;
     }
 }
