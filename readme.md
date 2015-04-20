@@ -14,6 +14,3 @@ ink 包括 Typography、Grid、常用的 UI 组件、JS 组件（bootstrap）
 
 > 兼容 IE6+ / Chrome / Firefox / Safari，以及常用国产浏览器
 
-###开发状态
-
-**努力完善中**
