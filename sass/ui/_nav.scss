@@ -38,7 +38,8 @@
     left: 0;
     width: 100%;
     z-index: $zindexNavbar;
-    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    border: 1px solid $navBorderColor;
+    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.15));
     @if $lte7 {
         _position: absolute;
         _width: expression(eval(document.documentElement.clientWidth));

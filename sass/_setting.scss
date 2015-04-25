@@ -37,7 +37,7 @@ $textColor:             #444 !default; // 文字颜色
 $textGrayColor:         #999 !default; // 灰色字体颜色
 $linkColor:             #444 !default; // 链接颜色
 $linkHoverColor:        nth($primaryColor, 1) !default; // 链接鼠标悬浮颜色
-$borderColor:           #ccc !default; // 边框颜色
+$borderColor:           #e5e5e5 !default; // 边框颜色
 
 
 // fonts
@@ -63,6 +63,7 @@ $zindexTooltip:         1070 !default; // 工具提示
 //----------------------------------------------------- 
 $btnFontWeight:                500 !default;
 $btnBorderRadius:              2px !default;
+$btnBorderColor:               #ccc !default;
 
 $btnDefault:                   30px !default;
 $btnSmall:                     20px !default;
@@ -102,8 +103,8 @@ $inputBorderErrorColor:        nth($red, 1) !default;
 // Pagination 分页
 //----------------------------------------------------- 
 $paginationColor:                    #555 !default;
-$paginationBg:                       #eee !default;
-$paginationBorder:                   #eee !default;
+$paginationBg:                       #e5e5e5 !default;
+$paginationBorder:                   #e5e5e5 !default;
 $paginationHeight:                   28px !default;
 
 $paginationHoverColor:               #fff !default;
@@ -116,8 +117,8 @@ $paginationActiveBorder:             nth($primaryColor, 1) !default;
 
 $paginationBorderSwitch:             true !default;
 $paginationDisabledColor:            #ababab !default;
-$paginationDisabledBg:               #e6e6e6 !default;
-$paginationDisabledBorder:           #e6e6e6 !default;
+$paginationDisabledBg:               #e5e5e5 !default;
+$paginationDisabledBorder:           #e5e5e5 !default;
 
 
 
@@ -174,6 +175,7 @@ $cardBorderColor:              $borderColor !default;
 //----------------------------------------------------- 
 $navHeight:                    40px !default;
 $navBgColor:                   #fff !default;
+$navBorderColor:               #e5e5e5 !default;
 $navTextColor:                 $linkColor !default;
 $navTextHoverColor:            $linkHoverColor !default;
 $navItemPadding:               20px !default;

@@ -33,9 +33,11 @@
         width: 3px;
         height: 3px;
         background-color: #dcdcdc;
-        _font-size: 0;
-        _line-height: 0;
         margin-top: ($listHeight - 4)/2;
         margin-right: 7px;
+        @if $lte7 {
+            _font-size: 0;
+            _line-height: 0;
+        }
     }
 }
