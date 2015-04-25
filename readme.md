@@ -69,13 +69,13 @@ iconfont 制作教程 [字体图标制作详解](http://www.uisdc.com/make-the-f
 
 ## 栅格布局
 
-ink 的布局是 980px 宽，分 20 个栅格，一个栅格的宽度为 30px，栅格之间的间隙为 20px。所有栅格必须包含在 `.container` 内。具体使用方法见文档：[栅格系统](../grid/index.html) 
+ink 的布局是 980px 宽，分 20 个栅格，一个栅格的宽度为 30px，栅格之间的间隙为 20px。所有栅格必须包含在 `.container` 内。
 
 更多关于栅格系统的介绍 [栅格设计](https://zh.wikipedia.org/wiki/%E6%A0%85%E6%A0%BC%E8%AE%BE%E8%AE%A1) 与 [网页的栅格系统设计](http://ued.taobao.org/blog/2008/09/grid_systems/) 。
 
-### 现实版布局
+### 布局 2.0
 
-栅格布局是一种理想形态，因业务的需要以及其他问题，于是就有了**现实版布局**。具体使用方法见文档：[栅格系统](../grid/index.html)
+根据业务实际情况，无法直接使用栅格布局。于是就有了**布局2.0** 。具体使用方法请阅读源码`_layout.scss`。
 
 ## UI 组件
 
@@ -96,7 +96,7 @@ ink 的 CSS 文件是通过 Sass 源码编译而来的。Sass 是一门预处理
 
 ### 编译
 
-可以通过使用已编译好的 CSS 文件使用 ink，建议根据实际需求编译 Sass 源码文件。
+ink 虽然提供了已编译好的 CSS 文件，但建议根据实际需求编译 Sass 源码文件。
 ink 使用 [Grunt](http://gruntjs.cn/) 作为构建工具。如果您未使用过 Grunt 或者其他类似（[gulp](http://gulpjs.com/)、[fis](http://fis.baidu.com/)）的构建工具，墙裂推荐使用。
 
 ### 包含内容
