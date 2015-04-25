@@ -87,8 +87,6 @@ ink 的组件开发规范是参考百姓网 UI 库 Puerh，详见 [CSS 组件](h
 
 目前 ink 的所有组件都使用 Twitter Bootstrap 库的自定义 Javascript 插件（增加了`IE6/IE7`支持）。
 
-具体使用方法参见：[JavaScript 组件»]()
-
 
 ## 使用 Sass
 
