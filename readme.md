@@ -1,6 +1,6 @@
 # ink
 
-ink 参考了 bootstrap 与 Puerh（UI 组件开发方式），根据个人工作需要，基于 Sass 与 Grunt 构建的一套前端 UI 库。
+ink 参考了 bootstrap 与 Puerh，根据个人工作需要，基于 Sass 与 Grunt 构建的一套前端 UI 库。
 
 ink 使用到的开源代码：
 
@@ -81,7 +81,7 @@ ink 的布局是 980px 宽，分 20 个栅格，一个栅格的宽度为 30px，
 
 页面上的每个 UI 组件都应该像一个盒模型，不和页面的其他元素相互影响。使用统一的命名注释规范。
 
-ink 的组件开发规范是参考百姓网 UI 库 Puerh，详见 [CSS 组件](http://baixing.github.io/Puerh/start/#css)
+ink 的组件开发最重要的一点是每个组件都拥有各自的命名空间，避免全局类名过多导致冲突。
 
 ## JavaScript 组件
 
